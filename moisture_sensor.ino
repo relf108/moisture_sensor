@@ -9,14 +9,15 @@ void loop()
 {
   if (Serial.available() > 0)
   {
-    int sa = Serial.available();
+
     moistureVal = analogRead(moistureSensor);
-    Serial.println(moistureVal);
-    if (sa != Serial.available())
-    {
-      clearBuffer();
-    }
-    //clearBuffer();
+
+    //Delay to ensure pi is ready for val when it's sent
+    //delay(2000);
+    Serial.print("#");
+    Serial.print(moistureVal);
+    Serial.print("\n");
+    clearBuffer();
   }
 }
 
