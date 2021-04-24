@@ -1,0 +1,6 @@
+{
+    "sketch": "moisture_sensor.ino",
+    "port": "/dev/ttyACM0",
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:avrispmkii"
+}

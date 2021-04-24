@@ -12,8 +12,7 @@ void loop()
 
     moistureVal = analogRead(moistureSensor);
 
-    //Delay to ensure pi is ready for val when it's sent
-    //delay(2000);
+    //# to indicate start of val
     Serial.print("#");
     Serial.print(moistureVal);
     Serial.print("\n");
